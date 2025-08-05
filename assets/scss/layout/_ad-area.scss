@@ -1,0 +1,36 @@
+/* ad-area */
+.ad-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: $color-primary-200;
+  padding: 24px 0;
+}
+.ad-area p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $color-neutral-900;
+}
+.ad-area button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fff;
+  background-color: $color-neutral-900;
+  &:hover {
+    background-color: $color-neutral-700;
+  }
+}
+@media (max-width: 768px) {
+  .ad-area {
+    gap: 16px;
+    padding: 32px 24px;
+  }
+  .ad-area p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+}

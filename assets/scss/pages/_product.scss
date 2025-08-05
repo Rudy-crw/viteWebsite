@@ -1,0 +1,240 @@
+.main {
+  margin: 0 auto;
+  max-width: 1296px;
+}
+.breadcrumb {
+  line-height: 1.5;
+  display: flex;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px;
+  color: $color-neutral-300;
+  font-weight: 700;
+}
+.breadcrumb-item {
+  display: flex;
+  color: $color-neutral-600;
+  font-weight: 500;
+}
+.breadcrumb-link {
+  color: $color-neutral-600;
+}
+.breadcrumb-item:last-child {
+  color: $color-neutral-900;
+}
+.product-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-neutral-900;
+}
+
+.product-price del {
+  color: $color-neutral-500;
+}
+.product-text {
+  line-height: 1.5;
+}
+.product-color-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-neutral-900;
+}
+.product-colors-area {
+  display: flex;
+  gap: 8px;
+}
+.product-colors-item {
+  width: 64px;
+}
+.product-colors-item p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-neutral-600;
+}
+.product-size-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-neutral-900;
+}
+
+.size-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.product-size-btn {
+  border: 1px solid $color-neutral-300;
+  width: 160px;
+}
+.product-size-btn.active,
+.product-size-btn:hover {
+  border-color: $color-neutral-900;
+}
+.stock-low {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $functional-danger-300;
+}
+
+.product-action {
+  display: flex;
+  gap: 8px;
+}
+.btn-reserve {
+  background-color: $color-neutral-900;
+  color: #fff;
+  &:hover {
+    background-color: $color-neutral-700;
+  }
+}
+.btn-favorite {
+  border: 1px solid $color-neutral-900;
+  &:hover {
+    background-color: $color-neutral-900;
+    color: #fff;
+  }
+}
+.btn-favorite,
+.btn-reserve {
+  width: 50%;
+}
+.btn-favorite .bi,
+.btn-reserve .bi {
+  padding-right: 8px;
+}
+
+.product-material,
+.purchase-notice,
+.product-care {
+  padding: 12px 0;
+  border-bottom: 1px solid $color-neutral-300;
+}
+.product-material-title,
+.purchase-notice-title,
+.product-care-title {
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-neutral-900;
+}
+.product-material p,
+.purchase-notice p,
+.product-care p {
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-neutral-600;
+}
+
+.related-products {
+  padding: 48px 0;
+  max-width: 1296px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.related-products-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $color-neutral-900;
+}
+.related-products .product-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $color-neutral-900;
+}
+.related-products .product-price {
+  color: $color-neutral-900;
+}
+picture {
+  display: none;
+}
+.swiper-wrapper-area {
+  display: none;
+}
+@media (max-width: 768px) {
+  .m-p-0 {
+    padding: 0;
+  }
+  .m-p-12 {
+    padding: 12px;
+  }
+  .m-m-0 {
+    margin: 0;
+  }
+  .m-mb-8 {
+    margin-bottom: 8px;
+  }
+  .m-mb-12 {
+    margin-bottom: 12px;
+  }
+  .m-mb-24 {
+    margin-bottom: 24px;
+  }
+  .m-px-12 {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .m-py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .m-display-n {
+    display: none;
+  }
+  .m-col-12 {
+    width: 100%;
+  }
+  .product-row {
+    display: none;
+  }
+  picture {
+    display: block;
+  }
+  .product-title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .product-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .product-action {
+    flex-direction: row-reverse;
+  }
+  .btn-favorite span {
+    display: none;
+  }
+  .btn-favorite {
+    border: 0;
+    line-height: 1;
+  }
+  .btn-favorite {
+    width: auto;
+  }
+  .btn-reserve {
+    width: 84%;
+  }
+  .btn-favorite .bi {
+    padding: 0;
+    font-size: 24px;
+  }
+  .related-products-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  .related-products {
+    padding-left: 12px;
+  }
+  .swiper-wrapper-area {
+    display: block;
+  }
+}

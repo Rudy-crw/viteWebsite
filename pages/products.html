@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>產品列表頁</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="main py-32 mb-48 m-mb-24 m-px-12">
+      <nav class="mb-24">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="breadcrumb-link">首頁</a>
+          </li>
+          <li class="breadcrumb-item">女鞋</li>
+          <li class="breadcrumb-item">所有商品</li>
+        </ol>
+      </nav>
+      <div class="page-title mb-24"><h2>女鞋</h2></div>
+      <div class="products-area">
+        <div class="category-area">
+          <ul class="category-item">
+            <li><a class="nowPage" href="#">所有商品</a></li>
+            <li><a href="#">慢跑鞋</a></li>
+            <li><a href="#">滑板鞋</a></li>
+            <li><a href="#">厚底鞋</a></li>
+            <li><a href="#">限定 / 聯名企劃</a></li>
+          </ul>
+        </div>
+        <div class="products-area-cardList">
+          <div>
+            <ul class="products-cards-area mb-48 m-mb-32">
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product.png"
+                    alt="PLATFORM 404"
+                  />
+                  <p class="product-name">PLATFORM 404</p>
+
+                  <p class="product-price label-md">NT$2,600</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product-1.png"
+                    alt="PLATFORM 404"
+                  />
+                  <p class="product-name">PLATFORM 404</p>
+
+                  <p class="product-price label-md">NT$2,600</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product-2.png"
+                    alt="VM001"
+                  />
+                  <p class="product-name">VM001</p>
+
+                  <p class="product-price label-md">NT$2,600</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product-3.png"
+                    alt="Melty Kiss"
+                  />
+                  <p class="product-name">Melty Kiss</p>
+
+                  <p class="product-price label-md">NT$4,000</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product-4.png"
+                    alt="BOOMBLOK"
+                  />
+                  <p class="product-name">BOOMBLOK</p>
+
+                  <p class="product-price label-md">NT$3,200</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product-5.png"
+                    alt="BOOMBLOK"
+                  />
+                  <p class="product-name">BOOMBLOK</p>
+
+                  <p class="product-price label-md">NT$3,200</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product-6.png"
+                    alt="R:UNER"
+                  />
+                  <p class="product-name">R:UNER</p>
+
+                  <p class="product-price label-md">NT$4,000</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product-7.png"
+                    alt="Sugar Snap"
+                  />
+                  <p class="product-name">Sugar Snap</p>
+
+                  <p class="product-price label-md">NT$4,000</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product-8.png"
+                    alt="Neofoam"
+                  />
+                  <p class="product-name">Neofoam</p>
+
+                  <p class="product-price label-md">NT$4,000</p>
+                </a>
+              </li>
+              <li class="product-card">
+                <a href="product.html"
+                  ><img
+                    class="mb-12 m-mb-8"
+                    src="../assets/images/product-9.png"
+                    alt="Neofoam"
+                  />
+                  <p class="product-name">Buttermood</p>
+
+                  <p class="product-price label-md">NT$4,000</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="pagination">
+            <li class="page-item">
+              <button type="button" class="btn" disabled>
+                <i class="bi bi-chevron-left"></i>
+              </button>
+            </li>
+            <li class="page-item">
+              <button type="button" class="btn active">1</button>
+            </li>
+            <li class="page-item">
+              <button type="button" class="btn">2</button>
+            </li>
+            <li class="page-item">
+              <button type="button" class="btn">3</button>
+            </li>
+            <li class="page-item">
+              <button type="button" class="btn">...</button>
+            </li>
+            <li class="page-item">
+              <button type="button" class="btn">10</button>
+            </li>
+            <li class="page-item">
+              <button type="button" class="btn">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ad-area">
+      <p>加入會員取得 9 折優惠</p>
+      <button type="button" class="btn">馬上註冊</button>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

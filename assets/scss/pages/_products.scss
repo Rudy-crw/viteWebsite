@@ -1,0 +1,132 @@
+.main {
+  margin: 0 auto;
+  max-width: 1296px;
+}
+.breadcrumb {
+  line-height: 1.5;
+  display: flex;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px;
+  color: $color-neutral-300;
+  font-weight: 700;
+}
+.breadcrumb-item {
+  display: flex;
+  color: $color-neutral-900;
+  font-weight: 500;
+}
+.breadcrumb-item:not(:last-child) {
+  color: $color-neutral-600;
+}
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-neutral-900;
+  padding: 7px 0;
+}
+
+.products-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.category-area {
+  line-height: 1.5;
+  width: 15%;
+}
+.category-item li a {
+  display: block;
+  padding: 12px 0;
+  margin-bottom: 16px;
+  color: $color-neutral-900;
+  &:hover:not(.nowPage) {
+    color: $color-neutral-600;
+  }
+}
+.category-item .nowPage {
+  color: $color-primary-400;
+  font-weight: 500;
+}
+
+.products-area-cardList {
+  max-width: 1076px;
+}
+.products-cards-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 48px 24px;
+}
+.product-card {
+  width: calc((100% - 48px) / 3);
+}
+.product-card:nth-child(10) {
+  display: none;
+}
+.product-name {
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-neutral-900;
+  margin-bottom: 4px;
+}
+.product-card .product-price {
+  color: $color-neutral-900;
+}
+
+.pagination {
+  display: flex;
+  text-align: center;
+  line-height: 1.5;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.page-item .btn {
+  border-radius: 0;
+  padding: 8px 15px;
+  font-weight: 400;
+}
+.page-item .btn:hover {
+  background-color: #f8f9fa;
+  font-weight: 500;
+}
+.page-item .active {
+  background-color: $color-primary-300;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .category-area {
+    display: none;
+  }
+  .breadcrumb {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .page-title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  .products-cards-area {
+    gap: 24px 12px;
+  }
+  .product-name {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .product-card {
+    width: calc((100% - 12px) / 2);
+  }
+  .product-card:nth-child(10) {
+    display: block;
+  }
+}

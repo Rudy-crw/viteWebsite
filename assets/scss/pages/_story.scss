@@ -1,0 +1,174 @@
+.hero {
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hero-title {
+  text-align: center;
+  padding: 151px 0;
+}
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+.hero p {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.core-values {
+  max-width: 856px;
+  background-color: #f5fee7;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 32px;
+}
+.core-values h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #57a203;
+}
+.core-values p {
+  letter-spacing: 1px;
+}
+.brand-intro_img {
+  width: 1076px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brand-intro {
+  max-width: 856px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brand-about,
+.brand-history,
+.brand-philosophy,
+.brand-story {
+  border-bottom: 1px solid #dee2e6;
+}
+.brand-intro_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.brand-intro_highlight {
+  font-size: 20px;
+  font-weight: 700;
+  color: #57a203;
+  line-height: 1.2;
+}
+
+.brand-history_list {
+  padding-left: 5px;
+}
+
+.brand-history_list li + li {
+  margin-top: 12px;
+}
+.brand-history_item time {
+  padding-right: 8px;
+  padding-left: 5px;
+}
+.brand-history_item p {
+  padding-left: 8px;
+  border-left: 1px solid #212529;
+}
+
+.brand-philosophy_list li + li {
+  margin-top: 12px;
+}
+.brand-philosophy_item {
+  padding-left: 9px;
+  border-left: 3px solid #dee2e6;
+}
+
+.brand-story_item i {
+  color: #57a203;
+}
+.bi-arrow-up-right::before {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.brand-story_item a {
+  border-bottom: 1px solid #57a203;
+  padding-bottom: 3px;
+  font-weight: 500;
+  color: $color-primary-400;
+}
+
+.brand-story_item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url(../images/hero-sm.png);
+    margin-bottom: 32px;
+  }
+
+  .core-values {
+    text-align: left;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  .core-values p {
+    letter-spacing: 0.05em;
+  }
+  .brand-intro_img {
+    margin-bottom: 16px;
+  }
+  .brand-intro_title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .brand-intro_highlight {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  .brand-intro_text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .brand-about {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  .brand-history_item p {
+    border: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .brand-history_item time {
+    padding: 0;
+  }
+  .brand-history_item time::after {
+    content: " | ";
+    color: $color-neutral-600;
+  }
+  .brand-history {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  .brand-philosophy {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  .brand-story {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}

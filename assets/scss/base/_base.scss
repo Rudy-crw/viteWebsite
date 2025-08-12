@@ -28,6 +28,11 @@ body {
 }
 
 /* 通用樣式 */
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 1320px;
+}
 
 .h1 {
   font-size: 40px;

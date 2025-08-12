@@ -8,14 +8,14 @@
   text-align: center;
   padding: 151px 0;
 }
-.hero h1 {
+.hero-title-ch {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
   line-height: 1.2;
   letter-spacing: normal;
 }
-.hero p {
+.hero-title-en {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.2;
@@ -40,10 +40,12 @@
   letter-spacing: 1px;
 }
 .brand-intro_img {
-  width: 1076px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .brand-intro {
   max-width: 856px;
@@ -99,11 +101,14 @@
   font-size: 20px;
   vertical-align: middle;
 }
-.brand-story_item a {
+.brand-story-link {
   border-bottom: 1px solid #57a203;
   padding-bottom: 3px;
   font-weight: 500;
   color: $color-primary-400;
+  &:hover {
+    background-color: $color-neutral-200;
+  }
 }
 
 .brand-story_item {
@@ -113,10 +118,44 @@
 
 @media (max-width: 768px) {
   .hero {
+    position: relative;
     background-image: url(../images/hero-sm.png);
+    background-size: cover;
+    background-position: center;
     margin-bottom: 32px;
   }
+  .hero::before {
+    content: ""; /* 偽元素必備 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 設定半透明黑色背景，0.2 代表 20% 的不透明度 */
+    background-color: rgba(0, 0, 0, 0.3);
 
+    z-index: 1; /* 確保遮罩在背景圖之上 */
+  }
+  .hero-title {
+    position: relative; /* 必備，這樣 z-index 才會生效 */
+    z-index: 2; /* 層級比偽元素高 */
+    /* 你原有的其他樣式... */
+    color: white; /* 建議文字用亮色，對比度較高 */
+    text-align: center; /* 讓文字水平置中 */
+    padding-top: 87px;
+    padding-bottom: 87px;
+  }
+  .hero-title-ch {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    padding-bottom: 4px;
+  }
+  .hero-title-en {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
   .core-values {
     text-align: left;
     padding: 24px;

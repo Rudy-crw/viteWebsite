@@ -1,7 +1,3 @@
-.main {
-  margin: 0 auto;
-  max-width: 1296px;
-}
 .breadcrumb {
   line-height: 1.5;
   display: flex;
@@ -35,7 +31,7 @@
 }
 .category-area {
   line-height: 1.5;
-  width: 15%;
+  max-width: 15%;
 }
 .category-item li a {
   display: block;

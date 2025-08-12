@@ -10,15 +10,15 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="container">
+    <div>
       <div class="hero">
         <div class="hero-title">
-          <h1 class="pb-16">品牌故事</h1>
-          <p>Brand Story</p>
+          <h1 class="pb-16 hero-title-ch">品牌故事</h1>
+          <p class="hero-title-en">Brand Story</p>
         </div>
       </div>
-      <div class="main my-64 m-px-12">
-        <div class="core-values mb-48">
+      <div class="main row my-64 m-px-12 m-my-32">
+        <div class="core-values mb-48 col-8">
           <h2 class="pb-12">走出城市的節奏，穿上自己的步調。</h2>
           <p class="pb-4">我們相信，每一雙鞋都該帶著個性出場。</p>
           <p class="pb-4">
@@ -28,12 +28,14 @@
             融合城市結構與機能語彙，我們打造適合都會節奏的風格鞋款，陪你自信穿梭每一場風景。
           </p>
         </div>
-        <img
-          class="brand-intro_img mb-24"
-          src="../assets/images/about.png"
-          alt="品牌照片"
-        />
-        <div class="brand-intro">
+        <div class="col-10 mx-a">
+          <img
+            class="brand-intro_img mb-24 col-10"
+            src="../assets/images/about.png"
+            alt="品牌照片"
+          />
+        </div>
+        <div class="brand-intro col-8">
           <div class="brand-about pb-48 mb-48">
             <h2 class="brand-intro_title mb-24">品牌簡介</h2>
             <p class="brand-intro_highlight mb-16">
@@ -95,15 +97,17 @@
             <ul class="brand-story_list">
               <li class="brand-story_item d-flex">
                 <i class="bi bi-arrow-up-right mr-8"></i>
-                <a href="#">創辦人筆記：我們為什麼想做鞋？</a>
+                <a href="#" class="brand-story-link"
+                  >創辦人筆記：我們為什麼想做鞋？</a
+                >
               </li>
               <li class="brand-story_item d-flex">
                 <i class="bi bi-arrow-up-right mr-8"></i>
-                <a href="#">穿上 URBNSTEP 的他們</a>
+                <a href="#" class="brand-story-link">穿上 URBNSTEP 的他們</a>
               </li>
               <li class="brand-story_item d-flex">
                 <i class="bi bi-arrow-up-right mr-8"></i>
-                <a href="#">URBNSTEP 鞋履的誕生過程</a>
+                <a href="#" class="brand-story-link">URBNSTEP 鞋履的誕生過程</a>
               </li>
             </ul>
           </div>

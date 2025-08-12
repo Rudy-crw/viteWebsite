@@ -1,7 +1,7 @@
-.main {
-  margin: 0 auto;
-  max-width: 1296px;
-}
+// .main {
+//   margin: 0 auto;
+//   max-width: 1296px;
+// }
 .breadcrumb {
   line-height: 1.5;
   display: flex;
@@ -72,7 +72,7 @@
   width: 160px;
 }
 .product-size-btn.active,
-.product-size-btn:hover {
+.product-size-btn:not(:disabled):hover {
   border-color: $color-neutral-900;
 }
 .stock-low {
@@ -122,9 +122,9 @@
   line-height: 1.5;
   color: $color-neutral-900;
 }
-.product-material p,
-.purchase-notice p,
-.product-care p {
+.product-material-text,
+.purchase-notice-text,
+.product-care-text {
   font-weight: 400;
   line-height: 1.5;
   color: $color-neutral-600;

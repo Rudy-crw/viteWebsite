@@ -8,27 +8,38 @@
 }
 .logo {
   padding: 8px 12px;
-  position: relative;
+  // position: relative;
 }
-.dot {
-  position: absolute;
-  z-index: 0;
-  border-radius: 50%;
-  background-color: #c0fa73;
-  height: 8px;
-  width: 8px;
-  top: 11px;
-  right: 11px;
-}
-.logo h2 {
-  font-family: "Mina", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 1.5;
-  position: relative;
-  z-index: 1;
-  color: $color-neutral-900;
+// .dot {
+//   position: absolute;
+//   z-index: 0;
+//   border-radius: 50%;
+//   background-color: #c0fa73;
+//   height: 8px;
+//   width: 8px;
+//   top: 11px;
+//   right: 11px;
+// }
+// .logo h2 {
+//   font-family: "Mina", sans-serif;
+//   font-weight: 700;
+//   font-style: normal;
+//   font-size: 20px;
+//   line-height: 1.5;
+//   position: relative;
+//   z-index: 1;
+//   color: $color-neutral-900;
+// }
+
+.logoImg {
+  background-image: url(/assets/images/Logo.png);
+  width: 129px;
+  height: 46px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
 }
 .menu {
   padding: 12px;
@@ -65,5 +76,8 @@
 
   .nav {
     padding: 13px 12px;
+  }
+  .logo {
+    padding: 0;
   }
 }
